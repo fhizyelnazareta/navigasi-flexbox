@@ -1,0 +1,143 @@
+/* import google fonts  */
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Sansita+Swashed&display=swap');
+
+/* Reset Style CSS */
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Style Body */
+body{
+    font-family: 'Sansita Swashed', cursive, sans-serif;
+}
+
+/* ===== Navbar ===== */
+nav{
+    display: flex;
+    background-color:#332B0A;
+    justify-content: space-around;
+    /* padding: 21px 0; */
+    color: rgb(243, 213, 213);
+    height: 60px;
+    align-items: center;
+}
+
+nav .logo {
+    font-family: 'Lobster', cursive;
+    letter-spacing: 4px;
+    font-size: 1.4em;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: rgb(243, 213, 213);
+    font-size: .95em;
+}
+
+nav ul li a:hover{
+    color: rgb(255, 253, 253);
+    background-color:#41360d;
+    padding: 19px;
+}
+
+/* toggle menu */
+.menu-toggle{
+    display: none;
+    flex-direction: column;
+    height: 20px;
+    justify-content: space-between;
+    position: relative;
+}
+
+.menu-toggle input{
+    position: absolute;
+    width: 40px;
+    height: 28px;
+    opacity: 0;
+    left: -5.5px;
+    top: -5px;
+    cursor: pointer;
+}
+
+.menu-toggle span{
+    display: block;
+    width: 28px;
+    height: 3px;
+    background-color: rgb(255, 253, 253);
+    border-radius: 3px;
+    transition: .5s;
+}
+
+/* toggle menu animation */
+.menu-toggle span:nth-child(2){
+    transform-origin: 0 0;
+}
+
+.menu-toggle span:nth-child(4){
+    transform-origin: 0 100%;
+}
+
+.menu-toggle input:checked ~ span:nth-child(2){
+    transform: rotate(45deg) translate(-1px, -1px);
+}
+
+.menu-toggle input:checked ~ span:nth-child(3){
+    display: none;
+}
+
+.menu-toggle input:checked ~ span:nth-child(4){
+    transform: rotate(-45deg) translate(-0.5px, 0);
+}
+
+/* Responsive Breakpoint */
+
+/* ukuran tablet */
+@media screen and (max-width: 768px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+/* ukuran mobile */
+@media screen and (max-width: 576px){
+    body{
+        overflow-x: hidden;
+    }
+    nav ul{
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80%;
+        flex-direction: column;
+        background-color: #332B0A;
+        opacity: .95;
+        height: 100vh;
+        z-index: -1;
+        justify-content: space-evenly;
+        align-items: center;
+        transform: translateX(100%);
+        transition: .5s;
+    }
+    nav ul li a:hover{
+        padding: 19px 100px;
+    }
+    nav .logo{
+        font-size: 0.95em;
+    }
+    .menu-toggle{
+        display: flex;
+    }
+
+    nav ul.slide{
+        display: flex;
+        transform: translateX(0);
+    }
+}
