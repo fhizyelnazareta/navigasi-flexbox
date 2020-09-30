@@ -15,7 +15,7 @@ body{
 /* ===== Navbar ===== */
 nav{
     display: flex;
-    background-color:#332B0A;
+    background-color:#660000;
     justify-content: space-around;
     /* padding: 21px 0; */
     color: rgb(243, 213, 213);
@@ -44,7 +44,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: rgb(255, 253, 253);
-    background-color:#41360d;
+    background-color:#7e0f0f;
     padding: 19px;
 }
 
@@ -59,10 +59,10 @@ nav ul li a:hover{
 
 .menu-toggle input{
     position: absolute;
-    width: 45px;
+    width: 60px;
     height: 28px;
     opacity: 0;
-    left: -6px;
+    left: -9px;
     top: -5px;
     cursor: pointer;
 }
@@ -117,7 +117,7 @@ nav ul li a:hover{
         top: 0;
         width: 80%;
         flex-direction: column;
-        background-color: #332B0A;
+        background-color: #660000;
         opacity: .95;
         height: 100vh;
         z-index: -1;
