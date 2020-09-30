@@ -59,10 +59,10 @@ nav ul li a:hover{
 
 .menu-toggle input{
     position: absolute;
-    width: 40px;
+    width: 45px;
     height: 28px;
     opacity: 0;
-    left: -5.5px;
+    left: -6px;
     top: -5px;
     cursor: pointer;
 }
