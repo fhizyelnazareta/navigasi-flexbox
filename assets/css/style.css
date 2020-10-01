@@ -15,11 +15,11 @@ body{
 /* ===== Navbar ===== */
 nav{
     display: flex;
-    background-color:#660000;
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
     justify-content: space-around;
     /* padding: 21px 0; */
     color: rgb(243, 213, 213);
-    height: 60px;
+    height: 75px;
     align-items: center;
 }
 
@@ -44,7 +44,7 @@ nav ul li a{
 
 nav ul li a:hover{
     color: rgb(255, 253, 253);
-    background-color:#7e0f0f;
+    background-color:#3a3ca8;
     padding: 19px;
 }
 
@@ -117,7 +117,7 @@ nav ul li a:hover{
         top: 0;
         width: 80%;
         flex-direction: column;
-        background-color: #660000;
+        background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(9,9,121,1) 35%, rgba(0,212,255,1) 100%);
         opacity: .95;
         height: 100vh;
         z-index: -1;
